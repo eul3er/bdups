@@ -8,7 +8,7 @@ Fast Duplicates finding programm using parallism
 
 NOTE: This is a early beta. Tested on Linux and FreeBSD
 
-Depedencies:
+Dependencies:
 
 Boost 1.55
 Cryptopp
