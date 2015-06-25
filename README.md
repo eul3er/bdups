@@ -20,9 +20,10 @@ make -jX      //X = number of cores to utilize
 
 
 Options:
-II With two arguments (core count, path):
+
+I With two arguments (core count, path):
 Look at the given path and execute the basic algorithm
 
-I With three arguments (core count, path1, path2)
+II With three arguments (core count, path1, path2)
 Look at path1 for the given files in path2 and execute basic algorithm
 
