@@ -37,8 +37,14 @@ int main(int argc, char** argv)
 
     if(argc == 3){
         //option 1
-        cores = boost::lexical_cast<unsigned int> (argv[1]);
-        folder = boost::lexical_cast<std::string>(argv[2]);
+        try{
+            cores = boost::lexical_cast<unsigned int> (argv[1]);
+            folder = boost::lexical_cast<std::string>(argv[2]);
+        }
+        catch(boost::bad_lexical_cast& ex){
+            std::cerr <<"Wrong usage: " << ex.what() << "\n";
+            return -1;
+        }
 
         CFilter<CSelectWithoutMatching> plain_filter(folder);
 
@@ -54,10 +60,16 @@ int main(int argc, char** argv)
     else if(argc == 4){
 
         //Option 2
-        cores = boost::lexical_cast<unsigned int> (argv[1]);
-        folder = boost::lexical_cast<std::string> (argv[2]);
-        std::string folder_to_match;
-        folder_to_match = boost::lexical_cast<std::string> (argv[3]);
+        try{
+            cores = boost::lexical_cast<unsigned int> (argv[1]);
+            folder = boost::lexical_cast<std::string> (argv[2]);
+            std::string folder_to_match;
+            folder_to_match = boost::lexical_cast<std::string> (argv[3]);
+        }
+        catch(boost::bad_lexical_cast& ex){
+            std::cerr <<"Wrong usage: " << ex.what() << "\n";
+            return -1;
+        }
 
         //load file infos from path2
         CFileSelector matching_selector;

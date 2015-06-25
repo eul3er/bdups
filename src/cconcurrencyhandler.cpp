@@ -10,7 +10,6 @@ CConcurrencyHandler::CConcurrencyHandler(std::unique_ptr<std::vector<CFileEntry>
    m_vec(std::move(search_folder)),
    m_cores(cores)
 {
-    //std::cerr << "file count:" << vec.size();
     if(cores == 0){
         m_cores = std::thread::hardware_concurrency();
     }    

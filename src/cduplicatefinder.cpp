@@ -36,26 +36,27 @@ void CDuplicateFinder::sortFilesize(){
 
 void CDuplicateFinder::findDuplicatesFileSize(std::vector<CFileEntry>::iterator itr){
 
+    auto itr_end = m_duplicates.end();
     auto itr_dup = std::adjacent_find(itr,
-                                      m_duplicates.end(),
+                                      itr_end,
                                       [](const auto& lhs, const auto& rhs) {
           return lhs.m_filesize == rhs.m_filesize;
         });
 
-    if (itr_dup != m_duplicates.end()) {
+    if (itr_dup != itr_end) {
 
       //Found a potential duplicate range
 
       auto itr_base = itr_dup;
 
       //Potential duplicates get prepared for a deep comparision
-      while (itr_base->m_filesize == itr_dup->m_filesize) {
+      while (itr_dup != itr_end && itr_base->m_filesize == itr_dup->m_filesize) {
         itr_dup->createHash();
         ++itr_dup;
       }
 
       //check for more dups
-      if (itr_dup != m_duplicates.end()) {
+      if (itr_dup != itr_end) {
         findDuplicatesFileSize(itr_dup);
       }
     }
