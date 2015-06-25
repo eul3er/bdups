@@ -6,12 +6,11 @@ NOTE: This is a early beta.
 Depedencies:
 
 Boost 1.55
-
 Cryptopp
-
 GCC4.9/Clang3.4
-
 CMAKE
+
+
 
 Guide:
 
