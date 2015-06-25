@@ -24,22 +24,4 @@ std::pair<ForwardItr, ForwardItr> duplicateRange(ForwardItr first, ForwardItr la
     return range;
 }
 
-template <typename ForwardItr, typename Pred>
-size_t splitter(ForwardItr first, ForwardItr last, Pred comp){
-    if(first == last){
-        return -1;
-    }
-    auto next = std::next(first, 1);
-    if(comp(first, next)){
-        //schaue nach nächstem Element
-        while(comp(first, next)){
-            std::advance(next, 1);
-        }
-        return std::distance(first, next);
-    }
-    else{
-        return 0;
-    }
-}
-
 #endif // DUPLICATEALGOS_H

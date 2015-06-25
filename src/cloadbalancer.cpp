@@ -19,7 +19,7 @@ std::pair<Itr,Itr> CLoadBalancer::createRange(std::vector<CFileEntry>& input_con
         auto size = balance(input_container, package_size);
 
         if(size == 0){
-            std::cerr << "No items to create a valid range";
+            std::cerr << "No items to create a valid range\n";
         }
         else{
             package_size += size;
