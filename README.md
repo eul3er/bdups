@@ -4,13 +4,19 @@ Fast Duplicates finding programm using parallism
 NOTE: This is a early beta.
 
 Depedencies:
+
 Boost 1.55
+
 Cryptopp
+
 GCC4.9/Clang3.4
+
 CMAKE
 
 Guide:
+
 cmake $folder //in the Folder of CMakeLists.txt file
+
 make -jX      //X = number of cores to utilize
 
 
