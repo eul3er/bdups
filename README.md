@@ -1,4 +1,9 @@
 # bdups
+
+contact: eu3ler@achernar.uberspace.de
+License: GPLv2
+
+bdupes:
 Fast Duplicates finding programm using parallism
 
 NOTE: This is a early beta. Tested on Linux and FreeBSD
