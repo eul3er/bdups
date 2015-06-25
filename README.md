@@ -1,7 +1,7 @@
 # bdups
 Fast Duplicates finding programm using parallism
 
-NOTE: This is a early beta.
+NOTE: This is a early beta. Tested on Linux and FreeBSD
 
 Depedencies:
 
