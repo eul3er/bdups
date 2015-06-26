@@ -8,22 +8,33 @@ Fast Duplicates finding programm using parallism
 
 NOTE: This is a early beta. Tested on FreeBSD, Linux and Windows
 
-Buildsystem: CMAKE
+Dependencies
+-------------
+* Boost 1.55 
+* Cryptopp
 
-Dependencies: Boost 1.55 Cryptopp
-
-Compiler: GCC 4.9 or Clang 3.4 or MingW4.9
-
-
-
-Build Guide:
-
-cmake $folder //in the Folder of CMakeLists.txt file
-
-make -jX      //X = number of cores to utilize
+Compiler
+--------
+* GCC 4.9 
+* Clang 3.4 
+* MingW4.9
 
 
-Options:
+
+Build Guide
+-----------
+execute
+```
+cmake $folder // $folder is the path to the Folder where CMakeLists.txt resides
+```
+then run
+```
+make -jX      //X is number of cores to utilize for building
+```
+
+
+Options
+--------
 
 I With two arguments (core count, path):
 Look at the given path and execute the basic algorithm
