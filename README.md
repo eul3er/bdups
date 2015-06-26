@@ -1,6 +1,7 @@
 # bdups
 
 contact: eu3ler@achernar.uberspace.de
+
 License: GPLv2
 
 bdupes:
