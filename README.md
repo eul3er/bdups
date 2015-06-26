@@ -7,7 +7,7 @@ License: GPLv2
 bdupes:
 Fast Duplicates finding programm using parallism
 
-NOTE: This is a early beta. Tested on FreeBSD, Linux and Windows
+Tested on FreeBSD, Linux and Windows
 
 Dependencies
 -------------
