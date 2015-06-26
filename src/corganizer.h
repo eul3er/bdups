@@ -35,7 +35,7 @@ public:
                 std::cout << "\n";
             }
             prev = itr;
-            std::cout<< itr->m_path.c_str() << "\n";
+            std::cout<< itr->m_path.native() << "\n";
         }
     }
 
