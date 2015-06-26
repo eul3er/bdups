@@ -6,13 +6,13 @@ License: GPLv2
 bdupes:
 Fast Duplicates finding programm using parallism
 
-NOTE: This is a early beta. Tested on Linux and FreeBSD
+NOTE: This is a early beta. Tested on FreeBSD, Linux and Windows
 
 Dependencies:
 
 Boost 1.55
 Cryptopp
-GCC4.9/Clang3.4
+GCC4.9/Clang3.4/Mingw491
 CMAKE
 
 
