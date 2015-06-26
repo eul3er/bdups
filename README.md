@@ -5,7 +5,7 @@ contact: eu3ler@achernar.uberspace.de
 License: GPLv2
 
 Short Description:
-Fast Duplicates finding programm using parallism
+Finding file duplicates really fast through heavy multicore usage. Works also great (full bandwidth usage) with NFS mounts.
 
 Tested on FreeBSD, Linux and Windows
 
