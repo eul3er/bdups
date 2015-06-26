@@ -8,15 +8,16 @@ Fast Duplicates finding programm using parallism
 
 NOTE: This is a early beta. Tested on FreeBSD, Linux and Windows
 
+Buildsystem: CMAKE
+
 Dependencies:
 
 Boost 1.55
-
 Cryptopp
 
-GCC4.9/Clang3.4/Mingw491
+GCC 4.9 or Clang 3.4 or MingW4.9
 
-CMAKE
+
 
 
 
