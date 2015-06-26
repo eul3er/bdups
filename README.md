@@ -37,12 +37,19 @@ make -jX      //X is number of cores to utilize for building
 Options
 --------
 
-0. With two arguments (core count, path):
+1. With two arguments (core count, path):
 Look at the given path and execute the basic algorithm
-Example: ./bdupes 12 /home/myUsername/stuff > /home/myUsername/out.file
 
-0. With three arguments (core count, path1, path2)
+Example: 
+```
+./bdupes 12 /home/myUsername/stuff > /home/myUsername/out.file
+```
+
+2. With three arguments (core count, path1, path2)
 Look at path1 for the given files in path2 and execute basic algorithm
-Example: ./bdupes 0 /home/myUsername/myStuff /home/myUsername/LookForDupsOfThoseFiles > /home/myUsername/out.file
 
+Example: 
+```
+./bdupes 0 /home/myUsername/myStuff /home/myUsername/LookForDupsOfThoseFiles > /home/myUsername/out.file
+```
 => using a zero for core count will result in logical core count.
