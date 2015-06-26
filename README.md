@@ -10,18 +10,13 @@ NOTE: This is a early beta. Tested on FreeBSD, Linux and Windows
 
 Buildsystem: CMAKE
 
-Dependencies:
+Dependencies: Boost 1.55 Cryptopp
 
-Boost 1.55
-Cryptopp
-
-GCC 4.9 or Clang 3.4 or MingW4.9
+Compiler: GCC 4.9 or Clang 3.4 or MingW4.9
 
 
 
-
-
-Guide:
+Build Guide:
 
 cmake $folder //in the Folder of CMakeLists.txt file
 
