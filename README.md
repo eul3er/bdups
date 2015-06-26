@@ -4,7 +4,7 @@ contact: eu3ler@achernar.uberspace.de
 
 License: GPLv2
 
-bdupes:
+Short Description:
 Fast Duplicates finding programm using parallism
 
 Tested on FreeBSD, Linux and Windows
