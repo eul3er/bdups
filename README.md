@@ -1,34 +1,55 @@
 # bdups
 
 contact: eu3ler@achernar.uberspace.de
+
 License: GPLv2
 
-bdupes:
-Fast Duplicates finding programm using parallism
+Short Description:
+Finding file duplicates really fast through heavy multicore usage. Works also great (full bandwidth usage) with NFS mounts.
 
-NOTE: This is a early beta. Tested on Linux and FreeBSD
+Tested on FreeBSD, Linux and Windows
 
-Dependencies:
+Dependencies
+-------------
+* Boost 1.55 
+* Cryptopp
 
-Boost 1.55
-Cryptopp
-GCC4.9/Clang3.4
-CMAKE
-
-
-
-Guide:
-
-cmake $folder //in the Folder of CMakeLists.txt file
-
-make -jX      //X = number of cores to utilize
+Compiler
+--------
+* GCC 4.9 
+* Clang 3.4 
+* MingW4.9
 
 
-Options:
 
-I With two arguments (core count, path):
+Build Guide
+-----------
+execute
+```
+cmake $folder // $folder is the path to the Folder where CMakeLists.txt resides
+```
+then run
+```
+make -jX      //X is number of cores to utilize for building
+```
+
+
+Options
+--------
+
+1) With two arguments (core count, path):
 Look at the given path and execute the basic algorithm
 
-II With three arguments (core count, path1, path2)
+Example: 
+```
+./bdupes 12 /home/myUsername/stuff > /home/myUsername/out.file
+```
+
+2) With three arguments (core count, path1, path2)
 Look at path1 for the given files in path2 and execute basic algorithm
 
+Example: 
+```
+./bdupes 0 /home/myUsername/myStuff /home/myUsername/LookForDupsOfThoseFiles > /home/myUsername/out.file
+```
+=> using a zero for core count will result in logical core count.
